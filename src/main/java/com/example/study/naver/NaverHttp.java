@@ -24,7 +24,7 @@ public class NaverHttp {
     private String naverLocalUri = "https://openapi.naver.com/v1/search/local.json";
     private String naverImageUri = "https://openapi.naver.com/v1/search/image";
     private String naverID = "lBKsCY1eJKBsuFPDvWRK";
-    private String naverSecret = "RXRWYrNams";
+    private String naverSecret = "";
 
     public LocalResponse localSearch(LocalRequest request){
         URI uri = UriComponentsBuilder
