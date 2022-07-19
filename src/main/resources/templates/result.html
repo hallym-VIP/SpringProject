@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+
+    </script>
+    <style>
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <table th:each="el : ${list}">
+        <tr>
+            <td><div th:text="${el.title}"></div></td>
+        </tr>
+        <tr>
+            <td><div th:text="${el.category}"></div></td>
+        </tr>
+        <tr>
+            <td><div th:text="${el.address}"></div></td>
+        </tr>
+        <tr>
+            <td><div th:text="${el.roadAddress}"></div></td>
+        </tr>
+        <tr>
+            <td><div th:text="${el.homepageLink}"></div></td>
+        </tr>
+        <tr>
+            <td><img th:src="@{${el.imageLink}}"></img></td>
+        </tr>
+    </table>
+</body>
+</html>
